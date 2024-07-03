@@ -1,3 +1,6 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next",
+  "rules": {
+    "@next/next/no-img-element": "off" // Desactiva la advertencia sobre <img> vs <Image />
+  }
 }

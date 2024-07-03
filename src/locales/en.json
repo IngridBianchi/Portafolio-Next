@@ -1,0 +1,25 @@
+{
+  "idiom":"en",
+  "welcome_text": "Hello! My name is ARRUA Alejandro",
+  "who_i_am": "I am a Computer Systems Analyst / Fullstack Web Developer. I have been professionally dedicated to designing, developing, and documenting web platforms since 2020. I enjoy challenges and continuously seek to learn different technologies, aiming to have a broader perspective when choosing the most appropriate technology stack for a project's demands. I consider myself proactive, goal-oriented, with a focus on helping the team achieve assigned objectives, and I am committed to fostering a friendly work environment to make the shared experience more enjoyable.",
+  "my_startups": "My Startups",
+  "my_projects": "My Projects",
+  "my_lang_stack": "My Language Stack",
+  "contact_me": {
+    "text": "Contact me",
+    "whatsapp": "+543434614035",
+    "email": "vp.arrua@gmail.com",
+    "github": "https://github.com/power38261010",
+    "linkedin": "https://www.linkedin.com/in/alejandro-arrua-b784b223a/",
+    "resume_text_en": "Curriculum Vitae in English",
+    "resume_text_es": "Curriculum Vitae",
+    "resume_en": "./assets/cv_en.pdf",
+    "resume_es": "./assets/cv_es.pdf"
+  },
+  "help_text": "Can I help you with something?",
+  "page_text": "Visit Page",
+  "gh_front_text": "Visit Backend Repository",
+  "gh_back_text": "Visit Frontend Repository",
+    "description": "Description: ",
+  "lang": "Languages: "
+}

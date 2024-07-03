@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "language_code": "PHP",
+    "poster_url": "https://miro.medium.com/v2/resize:fit:1400/1*RPeP8lkHMMBdh_Z-1GZN-w.png",
+    "github": "https://github.com/power38261010/Noa"
+  },
+  {
+    "id": 2,
+    "language_code": "PHP",
+    "poster_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNhzr2mRYl5MUm2e_2lwjL8luhqvNKYPA4yg&s",
+    "github": "https://github.com/power38261010/Prototype-Laravel-Scout"
+  },
+  {
+    "id": 3,
+    "language_code": "TypeScript",
+    "poster_url": "https://miro.medium.com/v2/resize:fit:1400/1*O5hmVOc1j-xOCs7VQKEdoA.png",
+    "github": "https://github.com/power38261010/React-TS-Netflix"
+  },
+  {
+    "id": 4,
+    "language_code": "TypeScript",
+    "poster_url": "https://res.cloudinary.com/dlgglwrvf/image/upload/v1676466597/hexagonal_archictecture_bdd08b5d04.jpg",
+    "github": "https://github.com/power38261010/hexagonal-architecture"
+  },
+  {
+    "id": 5,
+    "language_code": "Python",
+    "poster_url": "https://miro.medium.com/v2/resize:fit:614/1*0sQg0SQlFZvAviQWywTiow.png",
+    "github": "https://github.com/power38261010/Python-Selenium/tree/main/Projeyecto_Integral"
+  },
+  {
+    "id": 6,
+    "language_code": "Python",
+    "poster_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZWAQKYVa0Q7Vl_WMEY-z-aIH4dqbtvgEMg&s",
+    "github": "https://github.com/power38261010/Python-Selenium/tree/main/Lessons"
+  },
+  {
+    "id": 7,
+    "language_code": "JavaScript",
+    "poster_url": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200402205611/What-is-PERN-Stack.png",
+    "github": "https://github.com/power38261010/PI-Videogames-main"
+  },
+  {
+    "id": 8,
+    "language_code": "JavaScript",
+    "poster_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaXe-wcyVIi8EsVB9lqOyotvDPoBp1v0Cx8g&s",
+    "github": "https://github.com/power38261010/PI_Countries_FT_26A"
+  },
+  {
+    "id": 9,
+    "language_code": "C#",
+    "poster_url": "https://miro.medium.com/v2/resize:fit:1400/1*zXKbOuwD9wOIsIRR2sCQNw.png",
+    "github": "https://github.com/power38261010/.NET_Asp.NET_C-Sharp_Netflix"
+  },
+  {
+    "id": 10,
+    "language_code": "Java",
+    "poster_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJyPvsrm6Jkz9BC-FLWxttZEUaAYLx2ZZuxw&s",
+    "github": "https://github.com/power38261010/JAVA_SpringBoot"
+  }
+]

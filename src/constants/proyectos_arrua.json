@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Netflix Arrua",
+    "frontend": [
+      "https://miro.medium.com/v2/resize:fit:1400/0*VhctaUPL1str8CW3.png",
+      "https://images.velog.io/images/vamos_eon/post/67b0f6f6-941d-42da-ad7a-626ff0a96533/jwt.png",
+      "https://mui.com/static/logo.png",
+      "https://www.cajademedicos.com.ar/wp-content/uploads/logo-mercado-pago.png",
+      "https://miro.medium.com/v2/resize:fit:512/1*JEHLmWo6_SrpHPiP4AimIw.png",
+      "https://play-lh.googleusercontent.com/JIF3NcTOFRfaIruhGcEybAajkEpCbPvzKkUkKJP63VU1eB57JibONQRw1lxyiKgDgSs=w600-h300-pc0xffffff-pd",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1KeKU9SvWgqiHyiIlhOE0JOdB3n4e86DZ2A&s",
+      "https://camo.githubusercontent.com/98248b1bf462485aa41895e496c77664244583c89327baffb9dfa5af3a55ca89/68747470733a2f2f7777772e63686172746a732e6f72672f6d656469612f6c6f676f2d7469746c652e737667"
+    ],
+    "backend": [
+      "https://e7.pngegg.com/pngimages/929/60/png-clipart-net-framework-c-net-core-software-framework-mono-studio-purple-studio.png",
+      "https://cdni.comss.net/logo/netframework.png",
+      "https://desarrolloweb.com/storage/tag_images/actual/5k3LvpkqveO2SQQ8SO0NIoui6PNZ8mrNTnqG9W6z.png",
+      "https://learn.microsoft.com/es-es/ef/core/what-is-new/ef-core-8.0/ef8.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr1YMrW2sMbmxfsNfX_uzsUv-1H5TaB-WAww&s",
+      "https://www.cajademedicos.com.ar/wp-content/uploads/logo-mercado-pago.png",
+      "https://storage.subs.noventiq.com/public/images/market_setting/logotype/53445/SQL1.png",
+      "https://leccionamexico.b-cdn.net/wp-content/uploads/2022/08/curso-en-linea-de-introduccion-a-microsoft-azure.jpg"
+    ],
+    "video_tutorial_es": "",
+    "video_tutorial_en": "",
+    "poster_url": "./assets/netflix_arrua.png",
+    "description": "",
+    "github_f": "https://github.com/power38261010/React-TS-Netflix",
+    "github_b": "https://github.com/power38261010/.NET_Asp.NET_C-Sharp_Netflix",
+    "domain": "https://react-ts-netflix.vercel.app/movies-netflix"
+  },
+  {
+    "id": 2,
+    "name": "Video Games Arrua",
+    "frontend": [
+      "https://cpng.pikpng.com/pngl/s/150-1506141_html-css-and-javascript-logo-html5-css3-js.png"
+    ],
+    "backend": [
+      "https://miro.medium.com/v2/resize:fit:365/1*Jr3NFSKTfQWRUyjblBSKeg.png",
+      "https://miro.medium.com/v2/resize:fit:661/1*XcE0wR1ZmWLFbdF2dE5WuA.png",
+      "https://media.licdn.com/dms/image/D4D12AQF671W4H9RqLQ/article-cover_image-shrink_600_2000/0/1678308628318?e=2147483647&v=beta&t=Ppu2W1jDi5aKm1dqqw-TJyATZsDYw_Bk5433ONoGa5c"
+    ],
+    "video_tutorial": "",
+    "poster_url": "./assets/videogames_arrua.png",
+    "description": "",
+    "github_f": "https://github.com/power38261010/PI-Videogames-main/tree/master/client",
+    "github_b": "https://github.com/power38261010/PI-Videogames-main/tree/master/api",
+    "domain": "https://pi-videogames-main-sand.vercel.app/"
+  }
+]
