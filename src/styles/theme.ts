@@ -1,16 +1,18 @@
-// src/styles/theme.ts
-export const lightTheme = {
-  colors: {
-    background: '#FFFFFF',
-    text: '#333333',
-    primary: '#0070f3',
-  },
-};
 
-export const darkTheme = {
-  colors: {
-    background: '#121212',
-    text: '#FFFFFF',
-    primary: '#64FFDA',
+// src/styles/theme.ts
+import { createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  palette: {
+    mode: 'dark',
+    background: {
+      default: '#000',
+    },
+    text: {
+      primary: '#fff',
+    },
   },
-};
+  // Añade aquí otras configuraciones de MUI
+});
+
+export default theme;

@@ -11,15 +11,15 @@
     "email": "vp.arrua@gmail.com",
     "github": "https://github.com/power38261010",
     "linkedin": "https://www.linkedin.com/in/alejandro-arrua-b784b223a/",
-    "resume_text_en": "Curriculum Vitae in English",
-    "resume_text_es": "Curriculum Vitae",
-    "resume_en": "./assets/cv_en.pdf",
-    "resume_es": "./assets/cv_es.pdf"
+    "resume_text_en": "Resume in English",
+    "resume_text_es": "Resume in Spanish",
+    "resume_en": "assets/cv-en.pdf",
+    "resume_es": "assets/cv.pdf"
   },
   "help_text": "Can I help you with something?",
   "page_text": "Visit Page",
-  "gh_front_text": "Visit Backend Repository",
-  "gh_back_text": "Visit Frontend Repository",
+  "gh_front_text": " Back Repo",
+  "gh_back_text": "Front Repo",
     "description": "Description: ",
   "lang": "Languages: "
 }

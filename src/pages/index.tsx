@@ -1,11 +1,11 @@
 import { GetStaticProps } from 'next';
 import { useRouter } from 'next/router';
 import useDarkMode from '../hooks/useDarkMode';
-import Header from '../components/Header';
-import SectionAboutMe from '../components/SectionAboutMe';
-import SectionStartups from '../components/SectionStartups';
-import SectionProjects from '../components/SectionProjects';
-import SectionLanguages from '../components/SectionLanguages';
+import Header from '../components/Header/Header';
+import SectionAboutMe from '../components/SectionAboutMe/SectionAboutMe';
+import SectionStartups from '../components/SectionStartups/SectionStartups';
+import SectionProjects from '../components/SectionProjects/SectionProjects';
+import SectionLanguages from '../components/SectionLanguages/SectionLanguages';
 import { useState } from 'react';
 
 interface Props {
@@ -30,18 +30,39 @@ const Home: React.FC<Props> = ({ initialLanguage, texts, startups, projects, rep
   };
 
   return (
-    <div style={{ backgroundColor: themeStyles.colors.background, color: themeStyles.colors.text }}>
+    <div style={{ backgroundColor: themeStyles.colors.background, color: themeStyles.colors.text, width: '100%' }}>
       <Header
-        theme={theme} // Agrega esta línea
+        theme={theme}
         toggleTheme={toggleTheme}
         toggleLanguage={toggleLanguage}
         language={language}
         texts={texts}
       />
-      <SectionAboutMe aboutText={texts.who_i_am} />
-      <SectionStartups startups={startups} lang={texts} />
-      <SectionProjects projects={projects} lang={texts} />
-      <SectionLanguages repositories={repositories} stackImages={stackImages} lang={texts} />
+      <div
+        className="relative"
+        style={{
+          minHeight: '100vh',
+          overflowX: 'hidden',
+          backgroundImage: "url('/assets/bauty_miami_vice.gif')",
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundAttachment: 'fixed',
+        }}
+      >
+        <div className="relative z-10">
+          {/* Capa del fondo de GIF */}
+        </div>
+        <div className="relative z-10">
+          {/* Contenido de las secciones */}
+          <div className='flex justify-center items-center h-full'>
+            <SectionAboutMe aboutText={texts.who_i_am} welcome={texts.welcome_text} />
+          </div>
+          <SectionStartups startups={startups} lang={texts} />
+          <SectionProjects projects={projects} lang={texts} />
+          <SectionLanguages repositories={repositories} stackImages={stackImages} lang={texts} />
+        </div>
+      </div>
     </div>
   );
 };
