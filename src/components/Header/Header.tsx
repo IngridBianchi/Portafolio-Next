@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Switcher from '../Switcher/Switcher';
 import { useTheme } from '@mui/material/styles';
@@ -22,6 +22,61 @@ const Header: React.FC<Props> = ({
 }) => {
   const themes = useTheme();
   const [isLargeScreen, setIsLargeScreen] = useState(false);
+  const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isMuted, setIsMuted] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const audioElement = new Audio('/assets/neon-nights.mp3');
+      audioElement.loop = true;
+      setAudio(audioElement);
+      audioRef.current = audioElement;
+    }
+  }, []);
+
+  useEffect(() => {
+    const handlePlay = () => {
+      if (audioRef.current && isPlaying) {
+        audioRef.current.play().catch((error) => {
+          console.error('Failed to play audio:', error);
+        });
+      }
+    };
+
+    handlePlay();
+
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+      }
+    };
+  }, [isPlaying]);
+
+  const togglePlay = () => {
+    if (audio) {
+      if (isPlaying) {
+        audio.pause();
+        setIsMuted(true);
+      } else {
+        audio.play().catch((error) => {
+          console.error('Failed to play audio:', error);
+        });
+        setIsMuted(false);
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
+  const renderMuteIcon = () => {
+    return isMuted ? (
+      <Image src="/assets/mute.png" alt="Mute Icon" width={30} height={30} />
+    ) : (
+      <Image src="/assets/unmute.png" alt="Unmute Icon" width={30} height={30} />
+    );
+  };
+
   const en = 'Resume';
   const es = 'Curriculum Vitae';
 
@@ -104,8 +159,16 @@ const Header: React.FC<Props> = ({
 
       </div>
 
+  {/* Botón de mute/unmute */}
+  <div className="flex items-center ml-4">
+        {audio && (
+          <button className="relative" onClick={togglePlay}>
+            {renderMuteIcon()}
+          </button>
+        )}
+      </div>
       {/* Switcher de idioma */}
-      <div className={`flex items-center mr-4 ${styles.animateColorChange}`}>
+      <div className={`flex items-center mx-4 ${styles.animateColorChange}`}>
         <Switcher
           leftLabel="EN"
           rightLabel="ES"
