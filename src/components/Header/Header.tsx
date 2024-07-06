@@ -81,21 +81,25 @@ const Header: React.FC<Props> = ({
 
         {/* Botones de currículo con tooltips */}
         <Tooltip content={en}>
-          <button
-            className={`ml-4 bg-opacity-30 bg-black relative`}
-            onClick={() => window.open(texts.contact_me.resume_en)}
-          >
-            <Image src="/assets/resume-icon-en.png" alt="Resume Icon EN" width={30} height={30} />
-          </button>
+          <a href='' target="" rel="noopener noreferrer" className="flex items-center"> {/* Añadido flex y items-center */}
+            <button
+              className={`ml-4 relative`}
+              onClick={() => window.open(texts.contact_me.resume_en)}
+            >
+              <Image src="/assets/resume-icon-en.png" alt="Resume Icon EN" width={30} height={30} />
+            </button>
+          </a>
         </Tooltip>
 
         <Tooltip content={es}>
-          <button
-            className={`ml-4 bg-opacity-30 bg-black relative`}
-            onClick={() => window.open(texts.contact_me.resume_es)}
-          >
-            <Image src="/assets/resume-icon.png" alt="Resume Icon ES" width={30} height={30} />
-          </button>
+          <a href='' target="" rel="noopener noreferrer" className="flex items-center"> {/* Añadido flex y items-center */}
+            <button
+              className={`ml-4 relative`}
+              onClick={() => window.open(texts.contact_me.resume_es)}
+            >
+              <Image src="/assets/resume-icon.png" alt="Resume Icon ES" width={30} height={30} />
+            </button>
+          </a>
         </Tooltip>
 
       </div>

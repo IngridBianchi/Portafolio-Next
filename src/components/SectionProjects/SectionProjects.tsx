@@ -2,7 +2,6 @@ import React from 'react';
 import CardItem from '../CardItem/CardItem';
 import styles from '../Module-CSS/index.module.css';
 
-// Necesito que en caso de que halla un display mobile pasen del actual scroll que  usa el render al scrollbarStyles que figura debajo ( es nuevo)
 const scrollbarStyles = `
   ::-webkit-scrollbar {
     width: 10px; /* Ancho de la barra de desplazamiento */
@@ -23,7 +22,7 @@ const scrollbarStyles = `
 `;
 
 interface Props {
-  projects: any[]; // Array de objetos proyecto
+  projects: any[];
   lang?: any;
 }
 
