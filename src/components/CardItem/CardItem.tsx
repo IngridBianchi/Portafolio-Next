@@ -151,8 +151,11 @@ const CardItem: React.FC<Props> = ({ item, stackImages, lang }) => {
               {(lang.idiom === 'es' ? item?.description_es : item?.description_en) && (
                 <div className="mb-4">
                   <p className="font-semibold text-lg">{lang.description}</p>
-                  <div className="flex flex-wrap">
+                <div style={{ margin: '0 auto', maxHeight: '120px', overflowY: 'auto' }}>
+
+                  <div className="flex flex-wrap mr-2">
                     <p>{lang.idiom === 'es' ? item?.description_es : item?.description_en}</p>
+                  </div>
                   </div>
                 </div>
               )}

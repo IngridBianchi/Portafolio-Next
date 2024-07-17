@@ -25,15 +25,16 @@ interface Props {
   projects: any[];
   lang?: any;
 }
-
 const SectionProjects: React.FC<Props> = ({ projects, lang }) => {
   return (
-    <section style={{ padding: '2rem', color: 'white' }}>
-      <style>{scrollbarStyles}</style>
-      <div style={{ margin: '0 auto', maxWidth: '1200px', overflowX: 'auto' }}>
-        <h2 className={styles.animateColorChange} style={{ fontSize: '1.875rem', fontWeight: 'bold', marginBottom: '1rem' }}>
+    <section style={{ padding: '32px 16px', color: 'white' }}>
+      <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative' }}>
+
+        <h2 className={styles.animateColorChange} style={{ fontSize: '1.875rem', fontWeight: 'bold', marginBottom: '16px' }}>
           {lang.my_projects}
         </h2>
+      <style>{scrollbarStyles}</style>
+      <div style={{ margin: '0 auto', maxWidth: '1200px', overflowX: 'auto' }}>
         <div style={{ display: 'flex' }}>
           {projects.map((project) => (
             <div key={project.id} style={{ margin: '4px 16px' }}>
@@ -41,6 +42,7 @@ const SectionProjects: React.FC<Props> = ({ projects, lang }) => {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </section>
   );
