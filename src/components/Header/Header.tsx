@@ -24,6 +24,7 @@ const Header: React.FC<Props> = ({
   const [isLargeScreen, setIsLargeScreen] = useState(false);
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
