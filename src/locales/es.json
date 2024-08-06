@@ -18,8 +18,8 @@
   },
   "help_text": "¿Puedo ayudarte en algo?",
   "page_text": "Página",
-  "gh_front_text": "Repo Back",
-  "gh_back_text": "Repo Front",
+  "gh_front_text": "Repo Front",
+  "gh_back_text": "Repo Back",
   "description": "Descripcion: ",
   "lang": "Lenguajes: "
 }
