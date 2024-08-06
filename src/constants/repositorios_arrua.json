@@ -31,36 +31,42 @@
   },
   {
     "id": 6,
+    "language_code": "TypeScript",
+    "image_url": "https://blog.theodo.com/_astro/article-image-v1.CYeCtFgV_Z2nJNTq.webp",
+    "github": "https://github.com/power38261010/Netflix_Nest"
+  },
+  {
+    "id": 7,
     "language_code": "Python",
     "image_url": "https://miro.medium.com/v2/resize:fit:614/1*0sQg0SQlFZvAviQWywTiow.png",
     "github": "https://github.com/power38261010/Python-Selenium/tree/main/Projeyecto_Integral"
   },
   {
-    "id": 7,
+    "id": 8,
     "language_code": "Python",
     "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZWAQKYVa0Q7Vl_WMEY-z-aIH4dqbtvgEMg&s",
     "github": "https://github.com/power38261010/Python-Selenium/tree/main/Lessons"
   },
   {
-    "id": 8,
+    "id": 9,
     "language_code": "JavaScript",
     "image_url": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200402205611/What-is-PERN-Stack.png",
     "github": "https://github.com/power38261010/PI-Videogames-main"
   },
   {
-    "id": 9,
+    "id": 10,
     "language_code": "JavaScript",
     "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaXe-wcyVIi8EsVB9lqOyotvDPoBp1v0Cx8g&s",
     "github": "https://github.com/power38261010/PI_Countries_FT_26A"
   },
   {
-    "id": 10,
+    "id": 11,
     "language_code": "C#",
     "image_url": "https://miro.medium.com/v2/resize:fit:1400/1*zXKbOuwD9wOIsIRR2sCQNw.png",
     "github": "https://github.com/power38261010/.NET_Asp.NET_C-Sharp_Netflix"
   },
   {
-    "id": 11,
+    "id": 12,
     "language_code": "Java",
     "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJyPvsrm6Jkz9BC-FLWxttZEUaAYLx2ZZuxw&s",
     "github": "https://github.com/power38261010/JAVA_SpringBoot"
