@@ -1,0 +1,30 @@
+[
+  {
+    "id": 3,
+    "name": "Blog Videogames Bianchi",
+    "frontend": ["/assets/php.png","/assets/css.png", "/assets/html.png"],
+    "backend": ["/assets/php.png", "/assets/docker.png", "/assets/mysql.png"],
+    "video_tutorial_es": "",
+    "video_tutorial_en": "",
+    "poster_url": "assets/blog-videogame.png",
+    "description_es": "Un blog dinámico sobre videojuegos desarrollado en PHP y MySQL, con funcionalidades completas de CRUD, autenticación de usuarios y sistema de búsqueda.",
+    "description_en": "A dynamic video game blog developed in PHP and MySQL, with full CRUD functionality, user authentication, and a search system.",
+    "github_f": "",
+    "github_b": "https://github.com/IngridBianchi/blog-videogame?tab=readme-ov-file",
+    "domain":""
+  },
+  {
+    "id": 4,
+    "name": "T-shirt Shop - PHP OOP Project",
+    "frontend": ["/assets/php.png","/assets/css.png", "/assets/html.png"],
+    "backend": ["/assets/php.png", "/assets/docker.png", "/assets/mysql.png"],
+    "video_tutorial_es": "",
+    "video_tutorial_en": "",
+    "poster_url": "assets/tienda-camisetas.png",
+    "description_es": "Este proyecto es una tienda en línea desarrollada en PHP utilizando el paradigma de Programación Orientada a Objetos (POO). La aplicación permite gestionar productos, categorías, usuarios, pedidos y un carrito de compras, siguiendo el patrón de diseño MVC (Modelo-Vista-Controlador).",
+    "description_en": "This project is an online store developed in PHP using Object-Oriented Programming (OOP) paradigm. The application allows managing products, categories, users, orders, and a shopping cart, following the MVC (Model-View-Controller) design pattern.",
+    "github_f": "",
+    "github_b": "https://github.com/IngridBianchi/proyecto-ecommerce-php-poo",
+    "domain":""
+  }
+]

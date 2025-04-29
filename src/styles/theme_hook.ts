@@ -1,8 +1,8 @@
 // src/styles/theme_hook.ts
 export const lightTheme = {
   colors: {
-    background: '#FFFFFF',
-    text: '#333333',
+    background: '#ffffff',
+    text: '#FFFFFF',
     primary: '#0070f3',
   },
 };

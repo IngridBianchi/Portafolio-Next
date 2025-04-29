@@ -43,7 +43,7 @@ const Home: React.FC<Props> = ({ initialLanguage, texts, startups, projects, rep
         style={{
           minHeight: '100vh',
           overflowX: 'hidden',
-          backgroundImage: "url('/assets/bauty_miami_vice.gif')",
+          backgroundImage: "url('/assets/retro.portfolio.jpeg')",
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
@@ -69,9 +69,9 @@ const Home: React.FC<Props> = ({ initialLanguage, texts, startups, projects, rep
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const texts = require(`../locales/${locale}.json`);
-  const startups = require(`../constants/startups_arrua.json`);
-  const projects = require(`../constants/proyectos_arrua.json`);
-  const repositories = require(`../constants/repositorios_arrua.json`);
+  const startups = require(`../constants/startups_bianchi.json`);
+  const projects = require(`../constants/proyectos_bianchi.json`);
+  const repositories = require(`../constants/repositorios_bianchi.json`);
   const stackImages = {
     PHP: "./assets/php.png",
     TypeScript: "./assets/ts.webp",

@@ -22,7 +22,16 @@
   bottom: 0;
   border-radius: inherit;
   padding: 4px; /* Espesor del borde */
-  background: linear-gradient(270deg, rgb(148, 38, 182), rgb(136, 54, 190), rgb(136, 48, 158), rgb(209, 57, 163), rgb(207, 18, 106), rgb(122, 3, 122), rgb(148, 38, 182));
+  background: linear-gradient(
+  270deg,
+  rgb(210, 160, 230),  /* Lavanda claro */
+  rgb(200, 170, 235),  /* Lila pastel */
+  rgb(205, 165, 220),  /* Malva suave */
+  rgb(235, 175, 220),  /* Rosa polvoriento */
+  rgb(240, 150, 195),  /* Rosa melocotón */
+  rgb(220, 170, 220),  /* Orquídea pálido */
+  rgb(210, 160, 230)   /* Lavanda claro */
+);
   background-size: 1200% 1200%;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -44,7 +53,22 @@
 }
 
 .animateColorChange {
-  background: linear-gradient(270deg, rgb(148, 38, 182), rgb(136, 54, 190), rgb(136, 48, 158), rgb(184, 70, 150), rgb(172, 27, 94), rgb(122, 3, 122), rgb(148, 38, 182 ), rgb(136, 54, 190), rgb(136, 48, 158), rgb(209, 57, 163), rgb(173, 0, 101), rgb(122, 3, 122), rgb(148, 38, 182 )  );
+  background: linear-gradient(
+    270deg,
+    rgb(232, 203, 242),  /* Lavanda claro */
+    rgb(223, 198, 240),  /* Lila pastel */
+    rgb(227, 195, 235),  /* Malva suave */
+    rgb(241, 202, 229),  /* Rosa polvoriento */
+    rgb(240, 185, 215),  /* Rosa claro */
+    rgb(230, 200, 230),  /* Orquídea pálido */
+    rgb(232, 203, 242),  /* Repetición lavanda */
+    rgb(223, 198, 240),  /* Repetición lila */
+    rgb(227, 195, 235),  /* Repetición malva */
+    rgb(245, 210, 233),  /* Rosa algodón */
+    rgb(243, 180, 213),  /* Rosa melocotón */
+    rgb(230, 200, 230),  /* Repetición orquídea */
+    rgb(232, 203, 242)   /* Cierre lavanda */
+  );
   background-size: 200% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -53,7 +77,22 @@
 
 @keyframes borderAnimation {
   0% , 100%{
-    border-image-source: linear-gradient(270deg, rgb(148, 38, 182), rgb(136, 54, 190), rgb(136, 48, 158), rgb(184, 70, 150), rgb(172, 27, 94), rgb(122, 3, 122), rgb(148, 38, 182 ), rgb(136, 54, 190), rgb(136, 48, 158), rgb(209, 57, 163), rgb(173, 0, 101), rgb(122, 3, 122), rgb(148, 38, 182 )  );
+    border-image-source: linear-gradient(
+      270deg,
+      rgb(232, 203, 242),  /* Lavanda claro */
+      rgb(223, 198, 240),  /* Lila pastel */
+      rgb(227, 195, 235),  /* Malva suave */
+      rgb(241, 202, 229),  /* Rosa polvoriento */
+      rgb(240, 185, 215),  /* Rosa claro */
+      rgb(230, 200, 230),  /* Orquídea pálido */
+      rgb(232, 203, 242),  /* Repetición lavanda */
+      rgb(223, 198, 240),  /* Repetición lila */
+      rgb(227, 195, 235),  /* Repetición malva */
+      rgb(245, 210, 233),  /* Rosa algodón */
+      rgb(243, 180, 213),  /* Rosa melocotón */
+      rgb(230, 200, 230),  /* Repetición orquídea */
+      rgb(232, 203, 242)   /* Cierre lavanda */
+    );
     background-position: 0% 50%;
   }
   20% {

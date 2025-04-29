@@ -1,8 +1,8 @@
 {
   "PHP": "./assets/php.png",
-  "TypeScript": "./assets/ts.webp",
+  "TypeScript": "./assets/ts.pgn",
   "Python": "./assets/py.jpg",
-  "JavaScript": "./assets/js.png",
-  "C#": "./assets/c_sharp.webp",
+  "JavaScript": "./assets/jscript.png",
+  "C#": "./assets/c.png",
   "Java": "./assets/java.png"
 }

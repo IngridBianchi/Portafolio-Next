@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+**Título**
+Portfolio Personal de Ingrid Bianchi
 
-## Getting Started
+**Descripción**
+Este es mi portfolio personal, creado con Next.js, donde muestro mis habilidades y experiencia como desarrolladora full-stack. La aplicación tiene una estructura de página única con secciones para mostrar información sobre mí, mis proyectos y habilidades.
 
-First, run the development server:
+**Características**
+Rendimiento del lado del servidor: La aplicación utiliza Next.js para renderizar páginas en el servidor, lo que mejora la experiencia del usuario y el SEO.
+Generación de páginas estáticas: La aplicación puede generar páginas estáticas para mejorar el rendimiento y reducir la carga en el servidor.
+Enrutamiento dinámico: La aplicación utiliza un sistema de enrutamiento dinámico para crear rutas personalizadas para las páginas.
+Soporte para internacionalización: La aplicación tiene soporte para internacionalización y localización, lo que me permite mostrar contenido en diferentes idiomas.
 
-```bash
-npm run dev
+**Tecnologías utilizadas**
+Next.js: Framework de React para crear aplicaciones web escalables.
+React: Biblioteca de JavaScript para crear interfaces de usuario.
+CSS-in-JS: Utilizo CSS-in-JS para personalizar el estilo de la aplicación.
+JavaScript: Lenguaje de programación utilizado para crear la lógica de la aplicación.
+
+**Instalación y ejecución**
+Para ejecutar la aplicación, sigue los siguientes pasos:
+
+Clona el repositorio: git clone https://github.com/IngridBianchi/Portafolio-Next.git
+
+Instala las dependencias: npm install
+
+Ejecuta la aplicación: 
+npm run dev 
 # or
 yarn dev
 # or
 pnpm dev
 # or
 bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Licencia**
+Este proyecto está bajo la licencia MIT.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Autor**
+Ingrid Bianchi 

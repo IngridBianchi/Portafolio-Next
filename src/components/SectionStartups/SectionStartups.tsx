@@ -29,15 +29,15 @@ interface Props {
 
 const SectionStartups: React.FC<Props> = ({ startups, lang }) => {
   return (
-    <section style={{ padding: '32px 16px', color: 'white' }}>
+    <section style={{ padding: '22px 10px', color: 'white' }}>
       <style>{scrollbarStyles}</style>
-      <div style={{ margin: '0 auto', maxWidth: '1200px', overflowX: 'auto' }}>
+      <div style={{ margin: '0 auto', maxWidth: '1600px', overflowX: 'auto' }}>
         <h2 className={styles.animateColorChange} style={{ fontSize: '1.875rem', fontWeight: 'bold', marginBottom: '16px' }}>
           {lang.my_startups}
         </h2>
         <div style={{ display: 'flex' }}>
           {startups.map((startup) => (
-            <div key={startup.id} style={{ margin: '4px 16px' }}>
+            <div key={startup.id} style={{ margin: '4px 10px' }}>
               <CardItem key={startup.id} item={startup} lang={lang} />
             </div>
           ))}

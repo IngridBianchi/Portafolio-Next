@@ -9,7 +9,7 @@ const theme = createTheme({
       default: '#000',
     },
     text: {
-      primary: '#fff',
+      primary: '#ffff',
     },
   },
   // Añade aquí otras configuraciones de MUI
