@@ -32,7 +32,7 @@ const SectionStartups: React.FC<Props> = ({ startups, lang }) => {
     <section style={{ padding: '22px 10px', color: 'white' }}>
       <style>{scrollbarStyles}</style>
       <div style={{ margin: '0 auto', maxWidth: '1600px', overflowX: 'auto' }}>
-        <h2 className={styles.animateColorChange} style={{ fontSize: '1.875rem', fontWeight: 'bold', marginBottom: '16px' }}>
+        <h2 className={styles.animateColorChange} style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '16px', textShadow: '2px 2px 2px rgba(0, 0, 0, 0.3)', textAlign: 'center' }}>
           {lang.my_startups}
         </h2>
         <div style={{ display: 'flex' }}>

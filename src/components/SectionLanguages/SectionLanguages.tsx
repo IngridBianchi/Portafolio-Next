@@ -52,8 +52,8 @@ const SectionLanguages: React.FC<Props> = ({ repositories, stackImages, lang }) 
 
   return (
     <section style={{ padding: '32px 16px', color: 'white' }}>
-      <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative' }}>
-        <h2 className={styles.animateColorChange} style={{ fontSize: '1.875rem', fontWeight: 'bold', marginBottom: '16px' }}>
+      <div style={{ maxWidth: '1600px', margin: '0 auto', position: 'relative' }}>
+        <h2 className={styles.animateColorChange} style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '16px', textShadow: '2px 2px 2px rgba(0, 0, 0, 0.3)', textAlign: 'center' }}>
           {lang.my_lang_stack}
         </h2>
 

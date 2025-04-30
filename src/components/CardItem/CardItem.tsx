@@ -77,22 +77,9 @@ const CardItem: React.FC<Props> = ({ item, stackImages, lang }) => {
               opts={{
                 height: '100%',
                 width: '100%',
-                playerVars: {
-                  autoplay: 1,
-                  controls: 1,
-                  modestbranding: 1,
-                  showinfo: 0
-                }
               }}
-              className="h-full w-full rounded-md"
             />
-          ) : (
-            <img
-              src={item?.poster_url}
-              alt={item?.name}
-              className="max-w-full max-h-full object-contain rounded-md cursor-pointer"
-            />
-          )}
+          ) : null}
         </div>
       </div>
 

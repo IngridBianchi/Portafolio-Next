@@ -41,9 +41,9 @@ const SectionProjects: React.FC<Props> = ({ projects, lang }) => {
 
   return (
     <section style={{ padding: '32px 16px', color: 'white', position: 'relative' }}>
-      <div style={{ maxWidth: '1440px', margin: '0 auto', position: 'relative' }}>
-        <h2 className={styles.animateColorChange} style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '24px', paddingLeft: '16px' }}>
-          {lang.my_projects}
+      <div style={{ maxWidth: '1600px', margin: '0 auto', position: 'relative' }}>
+        <h2 className={styles.animateColorChange} style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '16px', textShadow: '2px 2px 2px rgba(0, 0, 0, 0.3)', textAlign: 'center' }}>
+          {lang.my_projects} 
         </h2>
 
         <style>{scrollbarStyles}</style>

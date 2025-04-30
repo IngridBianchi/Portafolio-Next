@@ -22,36 +22,17 @@
     "id": 4,
     "language_code": "TypeScript",
     "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt8FmMPse0kPMCR5jFbPCCkzHOhPt4vhYzlQ&s",
-    "github": "https://github.com/power38261010/portfolio_next.js"
+    "github": "https://github.com/IngridBianchi/Portafolio-Next"
   },
   {
-    "id": 7,
+    "id": 5,
     "language_code": "Python",
     "image_url": "https://miro.medium.com/v2/resize:fit:614/1*0sQg0SQlFZvAviQWywTiow.png",
     "github": "https://github.com/IngridBianchi/Proyecto-Integral-Python-Selenium"
   },
   {
-    "id": 8,
+    "id": 6,
     "language_code": "Python",
     "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZWAQKYVa0Q7Vl_WMEY-z-aIH4dqbtvgEMg&s",
     "github": "https://github.com/IngridBianchi/Lessons-Python-Selenium"
-  },
-  {
-    "id": 9,
-    "language_code": "JavaScript",
-    "image_url": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200402205611/What-is-PERN-Stack.png",
-    "github": "https://github.com/power38261010/PI-Videogames-main"
-  },
-  {
-    "id": 10,
-    "language_code": "JavaScript",
-    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaXe-wcyVIi8EsVB9lqOyotvDPoBp1v0Cx8g&s",
-    "github": "https://github.com/power38261010/PI_Countries_FT_26A"
-  }, 
-  {
-    "id": 12,
-    "language_code": "Java",
-    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJyPvsrm6Jkz9BC-FLWxttZEUaAYLx2ZZuxw&s",
-    "github": "https://github.com/power38261010/JAVA_SpringBoot"
-  }
-]
+  }]
