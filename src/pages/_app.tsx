@@ -1,9 +1,11 @@
-// src/pages/_app.tsx
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../styles/theme';
 import { appWithTranslation } from 'next-i18next';
 import { useEffect } from 'react';
-import '../styles/global.css'
+import { GradientProvider } from '../context/GradientContext';
+import GradientUpdater from '../components/GradientUpdater/GradientUpdater';
+import '../styles/global.css';
+
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     const jssStyles = document.querySelector('#jss-server-side');
@@ -13,9 +15,14 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <GradientProvider>
+      <ThemeProvider theme={theme}>
+        <GradientUpdater />
+        <div style={{ minHeight: '100vh', height: '100vh', position: 'relative' }}> {/* Añadido height y position */}
+          <Component {...pageProps} />
+        </div>
+      </ThemeProvider>
+    </GradientProvider>
   );
 }
 

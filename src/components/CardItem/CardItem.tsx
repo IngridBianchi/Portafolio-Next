@@ -12,6 +12,7 @@ interface Props {
 const CardItem: React.FC<Props> = ({ item, stackImages, lang }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isLargeScreen, setIsLargeScreen] = useState(false);
+  const theme = useTheme();
 
   useEffect(() => {
     const handleResize = () => {
@@ -40,20 +41,22 @@ const CardItem: React.FC<Props> = ({ item, stackImages, lang }) => {
     }
   };
 
-  const theme = useTheme();
-  const varHeigth = !!item?.image_url || !isLargeScreen ? '6rem' : '35vh';
+  const varHeight = !!item?.image_url || !isLargeScreen ? '6rem' : '35vh';
   const varWidth = !!item?.image_url || !isLargeScreen ? '12rem' : '35vw';
-  const varVideoID = lang.idiom === 'es' && item?.video_tutorial_es ? item?.video_tutorial_es?.split('v=')[1]?.split('&')[0]
-    : lang.idiom === 'en' && item?.video_tutorial_en ? item?.video_tutorial_en?.split('v=')[1]?.split('&')[0] : null
+  const varVideoID = lang.idiom === 'es' && item?.video_tutorial_es 
+    ? item?.video_tutorial_es?.split('v=')[1]?.split('&')[0]
+    : lang.idiom === 'en' && item?.video_tutorial_en 
+    ? item?.video_tutorial_en?.split('v=')[1]?.split('&')[0] 
+    : null;
 
   return (
-    <div className={`${styles.cardContainer} bg-black text-${theme.palette.text.primary} p-4 rounded-lg shadow-xl`}>
+    <div className={`${styles.cardContainer} text-${theme.palette.text.primary}`}>
       <div className="flex justify-center items-center">
         <div
           className="flex justify-center items-center mt-4"
           style={{
             width: varWidth,
-            height: varHeigth,
+            height: varHeight,
           }}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
@@ -88,11 +91,10 @@ const CardItem: React.FC<Props> = ({ item, stackImages, lang }) => {
           <>
             <h3 className="font-bold text-xl text-center mb-4 mt-2">{item?.name}</h3>
             
-            {/* Botones con nuevo espaciado */}
             <div className="flex flex-wrap justify-center gap-4 mb-6">
               {item?.domain && (
                 <button
-                  className="bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition-all min-w-[120px]"
+                  className="bg-gradient-to-r from-[#ff4d9e] to-[#ff1f81] text-white py-3 px-6 rounded-md hover:from-[#ff1f81] hover:to-[#d81b60] transition-all min-w-[120px]"
                   onClick={() => window.open(item?.domain)}
                 >
                   {lang.page_text}
@@ -100,7 +102,7 @@ const CardItem: React.FC<Props> = ({ item, stackImages, lang }) => {
               )}
               {item?.github_f && (
                 <button
-                  className="bg-gray-800 text-white py-3 px-6 rounded-md hover:bg-gray-900 transition-all min-w-[120px]"
+                  className="bg-gradient-to-r from-[#1e1e1e] to-[#2c2c2c] text-white py-3 px-6 rounded-md hover:from-[#2c2c2c] hover:to-[#1e1e1e] transition-all min-w-[120px]"
                   onClick={() => window.open(item?.github_f)}
                 >
                   {lang.gh_front_text}
@@ -108,7 +110,7 @@ const CardItem: React.FC<Props> = ({ item, stackImages, lang }) => {
               )}
               {item?.github_b && (
                 <button
-                  className="bg-gray-800 text-white py-3 px-6 rounded-md hover:bg-gray-900 transition-all min-w-[120px]"
+                  className="bg-gradient-to-r from-[#1e1e1e] to-[#2c2c2c] text-white py-3 px-6 rounded-md hover:from-[#2c2c2c] hover:to-[#1e1e1e] transition-all min-w-[120px]"
                   onClick={() => window.open(item?.github_b)}
                 >
                   {lang.gh_back_text}
@@ -116,13 +118,13 @@ const CardItem: React.FC<Props> = ({ item, stackImages, lang }) => {
               )}
             </div>
 
-            <div className="mt-2 bg-opacity-50 bg-black rounded-lg p-4">
+            <div className="mt-2 bg-opacity-50 bg-[#1e1e1e] rounded-lg p-4">
               <div className="mb-4">
                 <p className="font-semibold text-lg mb-2">Backend:</p>
                 <div className="flex flex-wrap gap-2">
                   {item?.backend?.map((tech: string, index: number) => (
                     <div key={index}>
-                      <img src={tech} alt="Backend Tech" className="h-20 w-auto object-contain" />
+                      <img src={tech} alt="Backend Tech" className="h-16 w-auto object-contain" />
                     </div>
                   ))}
                 </div>
@@ -133,7 +135,7 @@ const CardItem: React.FC<Props> = ({ item, stackImages, lang }) => {
                 <div className="flex flex-wrap gap-2">
                   {item?.frontend?.map((tech: string, index: number) => (
                     <div key={index}>
-                      <img src={tech} alt="Frontend Tech" className="h-20 w-auto object-contain" />
+                      <img src={tech} alt="Frontend Tech" className="h-16 w-auto object-contain" />
                     </div>
                   ))}
                 </div>

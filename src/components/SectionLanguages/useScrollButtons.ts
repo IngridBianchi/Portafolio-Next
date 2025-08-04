@@ -1,17 +1,26 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 
-const useScrollButtons = () => {
-  const [isScrollableLeft, setIsScrollableLeft] = useState(false);
-  const [isScrollableRight, setIsScrollableRight] = useState(false);
-  const scrollContainerRef = useRef(null);
+const useScrollButtons = (id: string) => {
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+  const [scrollState, setScrollState] = useState({
+    [id]: {
+      isScrollableLeft: false,
+      isScrollableRight: false,
+    },
+  });
 
-  const checkScrollButtons = () => {
+  const checkScrollButtons = useCallback(() => {
     if (scrollContainerRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current;
-      setIsScrollableLeft(scrollLeft > 0);
-      setIsScrollableRight(scrollLeft + clientWidth < scrollWidth);
+      setScrollState((prevState) => ({
+        ...prevState,
+        [id]: {
+          isScrollableLeft: scrollLeft > 0,
+          isScrollableRight: scrollLeft + clientWidth < scrollWidth - 1,
+        },
+      }));
     }
-  };
+  }, [id]);
 
   useEffect(() => {
     checkScrollButtons();
@@ -20,7 +29,7 @@ const useScrollButtons = () => {
     return () => {
       window.removeEventListener('resize', checkScrollButtons);
     };
-  }, []);
+  }, [checkScrollButtons]);
 
   const scrollLeft = () => {
     if (scrollContainerRef.current) {
@@ -36,11 +45,11 @@ const useScrollButtons = () => {
 
   return {
     scrollContainerRef,
-    isScrollableLeft,
-    isScrollableRight,
+    isScrollableLeft: scrollState[id]?.isScrollableLeft || false,
+    isScrollableRight: scrollState[id]?.isScrollableRight || false,
     scrollLeft,
     scrollRight,
-    checkScrollButtons
+    checkScrollButtons,
   };
 };
 

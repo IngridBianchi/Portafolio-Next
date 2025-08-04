@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import CardItem from '../CardItem/CardItem';
 import styles from '../Module-CSS/index.module.css';
-import useScrollButtons from './useScrollButtons'; // Importar el hook personalizado
+import useScrollButtons from './useScrollButtons';
 
 interface Props {
-  repositories: any[]; // Array de objetos repositorio
-  stackImages: any; // Objeto con las rutas a las imágenes de stack de lenguajes
+  repositories: any[];
+  stackImages: any;
   lang?: any;
 }
 
@@ -16,21 +16,21 @@ const SectionLanguages: React.FC<Props> = ({ repositories, stackImages, lang }) 
     isScrollableRight,
     scrollLeft,
     scrollRight,
-    checkScrollButtons
-  } = useScrollButtons();
+    checkScrollButtons,
+  } = useScrollButtons('languages');
 
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Ajusta el valor según el punto de ruptura deseado
+      setIsMobile(window.innerWidth <= 768);
     };
 
-    handleResize(); // Comprueba el tamaño inicial
-    window.addEventListener('resize', handleResize); // Escucha cambios de tamaño
+    handleResize();
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize); // Limpia el oyente al desmontar
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
@@ -51,80 +51,50 @@ const SectionLanguages: React.FC<Props> = ({ repositories, stackImages, lang }) 
   }, [scrollContainerRef, checkScrollButtons]);
 
   return (
-    <section style={{ padding: '32px 16px', color: 'white' }}>
-      <div style={{ maxWidth: '1600px', margin: '0 auto', position: 'relative' }}>
-        <h2 className={styles.animateColorChange} style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '16px', textShadow: '2px 2px 2px rgba(0, 0, 0, 0.3)', textAlign: 'center' }}>
-          {lang.my_lang_stack}
-        </h2>
-
-        <div style={{ position: 'relative' }}>
-          {isScrollableLeft && (
-            <button
-              onClick={scrollLeft}
-              style={{
-                position: 'absolute',
-                left: isMobile ? '0px' : '-40px', // Ajusta la posición para que el botón esté fuera del contenedor
-                top: '50%',
-                transform: 'translateY(-50%)',
-                backgroundColor: 'black',
-                color: 'white',
-                borderRadius: '50%',
-                width: '30px',
-                height: '30px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                zIndex: 10,
-                border: 'none',
-                cursor: 'pointer',
-              }}
-            >
-              &lt;
-            </button>
-          )}
-
-          <div
-            ref={scrollContainerRef}
-            style={{
-              display: 'flex',
-              justifyContent: 'flex-start', // Alinea al inicio
-              alignItems: 'center',
-              overflowX: 'auto', // Cambiado de 'hidden' a 'auto' para permitir desplazamiento
-              scrollBehavior: 'smooth',
-              width: isMobile ? 'calc(100% - 50px)' : '100%' // Ajusta el ancho para dispositivos móviles
-            }}
-          >
-            {repositories.map((repo) => (
-              <div key={repo.id} style={{ margin: isMobile ? '4px 8px' : '4px 26px' , display: 'flex', justifyContent: 'center', alignItems: 'center', width: isMobile ? 'calc(50% - 16px)' : 'auto'}}>
-                <CardItem item={repo} stackImages={stackImages} lang={lang} />
+    <section className={styles.section}>
+      <div className={styles.sectionContainer}>
+        <h2 className={styles.sectionTitle}>{lang.my_lang_stack}</h2>
+        <div className={isMobile ? '' : styles.cardGrid} style={{ position: 'relative' }}>
+          {isMobile && (
+            <>
+              {isScrollableLeft && (
+                <button
+                  onClick={scrollLeft}
+                  className="absolute left-0 top-1/2 -translate-y-1/2 bg-gradient-to-r from-[#ff4d9e] to-[#ff1f81] text-white rounded-full w-8 h-8 flex items-center justify-center z-10 hover:from-[#ff1f81] hover:to-[#d81b60] transition-all"
+                  aria-label="Desplazar a la izquierda"
+                >
+                  &lt;
+                </button>
+              )}
+              <div
+                ref={scrollContainerRef}
+                className="flex overflow-x-auto scroll-smooth"
+                style={{ padding: '16px 0', scrollbarWidth: 'thin' }}
+              >
+                {repositories.map((repo) => (
+                  <div
+                    key={repo.id}
+                    className="flex-shrink-0"
+                    style={{ margin: '4px 8px', width: 'calc(50% - 16px)' }}
+                  >
+                    <CardItem item={repo} stackImages={stackImages} lang={lang} />
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-
-          {isScrollableRight && (
-            <button
-              onClick={scrollRight}
-              style={{
-                position: 'absolute',
-                right: isMobile ? '0px' : '-40px', // Ajusta la posición para que el botón esté fuera del contenedor
-                top: '50%',
-                transform: 'translateY(-50%)',
-                backgroundColor: 'black',
-                color: 'white',
-                borderRadius: '50%',
-                width: '30px',
-                height: '30px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                zIndex: 10,
-                border: 'none',
-                cursor: 'pointer',
-              }}
-            >
-              &gt;
-            </button>
+              {isScrollableRight && (
+                <button
+                  onClick={scrollRight}
+                  className="absolute right-0 top-1/2 -translate-y-1/2 bg-gradient-to-r from-[#ff4d9e] to-[#ff1f81] text-white rounded-full w-8 h-8 flex items-center justify-center z-10 hover:from-[#ff1f81] hover:to-[#d81b60] transition-all"
+                  aria-label="Desplazar a la derecha"
+                >
+                  &gt;
+                </button>
+              )}
+            </>
           )}
+          {!isMobile && repositories.map((repo) => (
+            <CardItem key={repo.id} item={repo} stackImages={stackImages} lang={lang} />
+          ))}
         </div>
       </div>
     </section>
@@ -132,4 +102,3 @@ const SectionLanguages: React.FC<Props> = ({ repositories, stackImages, lang }) 
 };
 
 export default SectionLanguages;
-

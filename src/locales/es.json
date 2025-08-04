@@ -1,10 +1,11 @@
 {
   "idiom":"es",
   "welcome_text": "¡Hola! Mi nombre es Ingrid Bianchi",
-  "who_i_am": ["De estratega comercial a desarrolladora full-stack con visión UX.", "Tras años optimizando operaciones minoristas y liderando equipos multidisciplinarios, canalicé mi pasión por la eficiencia hacia el desarrollo tecnológico. Hoy fusiono diseño centrado en el usuario con desarrollo web robusto para crear soluciones digitales de alto impacto.", 
-  " Mi valor diferencial: visión 360° (desde prototipos UX hasta despliegue), experiencia en e-commerce y sistemas CRM, capacidad para traducir necesidades comerciales a soluciones técnicas, y metodologías ágiles con enfoque en rendimiento.",
-  " Lo que me inspira: transformar wireframes en sistemas interactivos, desarrollar arquitecturas backend eficientes y garantizar experiencias fluidas de principio a fin."],
-  "my_startups": "Mis Emprendimientos",
+  "who_i_am": [ "De estratega comercial a full-stack con alma de UX", "Antes vivía entre estrategias de ventas y equipos multidisciplinarios, buscando siempre la manera más eficiente de hacer las cosas. Pero pensé: ‘¿Y si llevo mi pasión por conectar al mundo tech?’ 🚀", 
+  "Ahora fusiono desarrollo web con diseño centrado en el usuario, entendiendo qué quieren y necesitan las personas para crear soluciones que realmente impacten.", 
+"Mi superpoder: una visión 360° que une empatía y estrategia. Estudio el mercado y la competencia para saber si un producto volará antes de escribir la primera línea de código. Con experiencia en e-commerce, CRM y metodologías ágiles, traduzco necesidades comerciales en tecnología sólida.", 
+"Me apasiona transformar ideas en sistemas interactivos que enganchan. Cada bug resuelto, cada experiencia fluida, es un paso hacia algo grande.", 
+"¿Listos para crear algo que marque la diferencia?"],
   "my_projects": "Mis Proyectos",
   "my_lang_stack": "Mi stack de lenguajes",
   "contact_me": {

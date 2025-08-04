@@ -1,3 +1,4 @@
+// src/pages/index.tsx
 import { GetStaticProps } from 'next';
 import { useRouter } from 'next/router';
 import useDarkMode from '../hooks/useDarkMode';
@@ -7,6 +8,7 @@ import SectionStartups from '../components/SectionStartups/SectionStartups';
 import SectionProjects from '../components/SectionProjects/SectionProjects';
 import SectionLanguages from '../components/SectionLanguages/SectionLanguages';
 import { useState } from 'react';
+import styles from '../components/Module-CSS/index.module.css';
 
 interface Props {
   initialLanguage: string;
@@ -20,7 +22,6 @@ interface Props {
 const Home: React.FC<Props> = ({ initialLanguage, texts, startups, projects, repositories, stackImages }) => {
   const { theme, themeStyles, toggleTheme } = useDarkMode();
   const [language, setLanguage] = useState<string>(initialLanguage);
-
   const router = useRouter();
 
   const toggleLanguage = () => {
@@ -30,7 +31,7 @@ const Home: React.FC<Props> = ({ initialLanguage, texts, startups, projects, rep
   };
 
   return (
-    <div style={{ backgroundColor: themeStyles.colors.background, color: themeStyles.colors.text, width: '100%' }}>
+    <div className={styles.portfolioContainer} style={{ backgroundColor: themeStyles.colors.background, color: themeStyles.colors.text }}>
       <Header
         theme={theme}
         toggleTheme={toggleTheme}
@@ -38,30 +39,11 @@ const Home: React.FC<Props> = ({ initialLanguage, texts, startups, projects, rep
         language={language}
         texts={texts}
       />
-      <div
-        className="relative"
-        style={{
-          minHeight: '100vh',
-          overflowX: 'hidden',
-          backgroundImage: "url('/assets/retro.portfolio.jpeg')",
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
-          backgroundAttachment: 'fixed',
-        }}
-      >
-        <div className="relative z-10">
-          {/* Capa del fondo de GIF */}
-        </div>
-        <div className="relative z-10">
-          {/* Contenido de las secciones */}
-          <div className='flex justify-center items-center h-full'>
-            <SectionAboutMe aboutText={texts.who_i_am} welcome={texts.welcome_text} />
-          </div>
-          <SectionStartups startups={startups} lang={texts} />
-          <SectionProjects projects={projects} lang={texts} />
-          <SectionLanguages repositories={repositories} stackImages={stackImages} lang={texts} />
-        </div>
+      <div className={styles.contentWrapper}>
+        <SectionAboutMe aboutText={texts.who_i_am} welcome={texts.welcome_text} />
+        <SectionStartups startups={startups} lang={texts} />
+        <SectionProjects projects={projects} lang={texts} />
+        <SectionLanguages repositories={repositories} stackImages={stackImages} lang={texts} />
       </div>
     </div>
   );
