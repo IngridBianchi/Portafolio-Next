@@ -1,12 +1,13 @@
 {
-  "idiom":"en",
+  "idiom": "en",
   "welcome_text": "Hello! My name is Ingrid Bianchi",
-  "who_i_am": [ "From business strategist to full-stack with a UX soul", "I used to live between sales strategies and multidisciplinary teams, always chasing the most efficient way to get things done. But then I thought: ‘What if I bring my passion for connecting to the tech world?’ 🚀", "Now I blend web development with user-centered design, understanding what people want and need to create solutions that truly make an impact.", "My superpower: a 360° vision that combines empathy and strategy. I study the market and competitors to know if a product will soar before writing a single line of code. With experience in e-commerce, CRM, and agile methodologies, I translate business needs into solid tech.", "I’m passionate about turning ideas into interactive systems that captivate. Every bug fixed, every seamless experience, is a step toward something big.", "Ready to build something that makes a difference? 🌟" ],
-  "my_startups": "My Startups",
-  "my_projects": "My Projects",
-  "my_lang_stack": "My Language Stack",
+  "who_i_am": [
+    "From Commercial Strategist to Full Stack Developer with Product Vision",
+    "I used to live among campaigns, multidisciplinary teams, and marketing dashboards—always searching for the most efficient way to connect with people. Then one day I thought: “What if I bring that obsession with understanding users into the tech world?",
+    "Today, I design and build digital solutions that don’t just work—they resonate. I blend solid backend development with user-centered UX/UI design, translating business needs into scalable, secure, and maintainable technology.",
+    "My edge: a 360° vision that fuses empathy, architecture, and strategy. I analyze the market, the competition, and the context before writing a single line of code. With experience in e-commerce, CRM, bots, APIs, and automation, every project I touch aims for real impact.",
+    "I’m passionate about turning ideas into interactive systems that solve problems, engage users, and evolve. Every bug fixed, every flow optimized, is a step toward something greater."],
   "contact_me": {
-    "text": "Contact me",
     "whatsapp": "+543434648300",
     "email": "bianchi.ingrid204@gmail.com",
     "github": "https://github.com/IngridBianchi",
@@ -16,10 +17,16 @@
     "resume_en": "assets/cv-en.pdf",
     "resume_es": "assets/cv.pdf"
   },
-  "help_text": "Can I help you with something?",
-  "page_text": "Visit Page",
-  "gh_front_text": "Front Repo",
-  "gh_back_text": "Back Repo",
-    "description": "Description: ",
-  "lang": "Languages: "
+  "tooltips": {
+    "audio_play": "Play music",
+    "audio_pause": "Pause music",
+    "theme_light": "Switch to light theme",
+    "theme_dark": "Switch to dark theme",
+    "language_en": "Switch to English",
+    "language_es": "Cambiar a Español"
+  },
+  "about_me_title": "About Me",
+    "projects_title": "Projects",
+    "startups_title": "Startups",
+    "language_stack_title": "Language Stack"
 }

@@ -53,7 +53,7 @@ const SectionLanguages: React.FC<Props> = ({ repositories, stackImages, lang }) 
   return (
     <section className={styles.section}>
       <div className={styles.sectionContainer}>
-        <h2 className={styles.sectionTitle}>{lang.my_lang_stack}</h2>
+        <h2 className={styles.sectionTitle}>{lang.language_stack_title}</h2>
         <div className={isMobile ? '' : styles.cardGrid} style={{ position: 'relative' }}>
           {isMobile && (
             <>

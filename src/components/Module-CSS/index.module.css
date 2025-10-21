@@ -1,4 +1,4 @@
-/* Estilos existentes */
+
 @keyframes backgroundAnimation {
   0% { background-position: 0% 50%; }
   100% { background-position: 400% 50%; }
@@ -22,8 +22,8 @@
 
 @media (max-width: 768px) {
   .Module-CSS_imageWrapper__xXmSM {
-    max-width: 100%; /* Ocupa el 100% en pantallas pequeñas */
-    height: 300px; /* Altura reducida para móviles */
+    max-width: 100%;
+    height: 300px;
   }
 }
 
@@ -31,55 +31,6 @@
   min-height: 100vh;
   transition: background-color 0.3s ease;
 }
-
-/* .heroSection {
-  position: relative;
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(
-    135deg,
-    var(--gradient-initial-1),
-    var(--gradient-initial-3)
-  );
-  overflow: hidden;
-}
-
-.heroSection::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle, rgba(96, 165, 250, 0.1) 0%, transparent 70%);
-  animation: backgroundAnimation 20s linear infinite;
-}
- */
-/* .heroContent {
-  text-align: center;
-  z-index: 1;
-} */
-
-/* .heroTitle {
-  font-size: 1.5rem;
-  font-weight: 800;
-  background: linear-gradient(90deg, var(--color-accent), var(--color-secondary));
-  background-size: 200%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textGradient 4s linear infinite;
-  margin-bottom: 1rem;
-} */
-
-/* .heroSubtitle {
-  font-size: 1.5rem;
-  color: var(--color-text-dark);
-  max-width: 600px;
-  margin: 0 auto;
-} */
 
 .section {
   padding: 2rem 0.5rem;
@@ -91,7 +42,7 @@
 }
 
 .sectionTitle {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 600;
   text-align: center;
   margin-bottom: 2rem;
@@ -100,7 +51,8 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textGradient 4s linear infinite;
+  //animation: textGradient 2s linear infinite;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.7);
 }
 
 .cardGrid {
@@ -114,17 +66,13 @@
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: var(--color-bg-dark);
+  background: transparent;
   z-index: 0;
 }
 
 .cardContainer:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-}
-
-.cardContainer:has(.Module-CSS_imageWrapper__xXmSM) {
-  background: transparent !important;
 }
 
 .cardContainer::before {
@@ -147,33 +95,13 @@
   color: var(--color-text-dark);
 }
 
-/* .animateColorChange {
-  background: linear-gradient(270deg, #e0e7ff, #60a5fa, #f472b6, #e0e7ff);
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: colorChange 18s ease infinite;
-} */
-
-/* .tippy-box[data-theme~='custom-tooltip'] {
-  background: linear-gradient(270deg, var(--color-accent), var(--color-secondary));
-  color: var(--color-text-dark);
-  border-radius: 8px;
-  font-size: 4px;
-  padding: 8px 12px;
-}
-
-.tippy-box[data-theme~='custom-tooltip'] .tippy-arrow {
-  color: var(--color-accent);
-} */
-
 .Module-CSS_imageWrapper__xXmSM {
   position: relative;
   width: 100%;
-  max-width: 500px; /* Limita el ancho máximo */
-  height: 650px; /* Establece una altura fija */
+  max-width: 500px;
+  height: 650px;
   overflow: hidden;
-  margin: 0 auto; /* Centra el contenedor */
+  margin: 0 auto;
 }
 
 .Module-CSS_imageWrapper__xXmSM::before {
@@ -197,26 +125,25 @@
   background: linear-gradient(
     270deg,
     var(--gradient-hover-1),
-    color-mix(in srgb, var(--gradient-hover-1) 50%, var(--gradient-hover-2) 50%), /* Mezcla intermedia */
+    color-mix(in srgb, var(--gradient-hover-1) 50%, var(--gradient-hover-2) 50%),
     var(--gradient-hover-2),
-    color-mix(in srgb, var(--gradient-hover-2) 50%, var(--gradient-hover-3) 50%), /* Mezcla intermedia */
+    color-mix(in srgb, var(--gradient-hover-2) 50%, var(--gradient-hover-3) 50%),
     var(--gradient-hover-3)
   );
 }
 
 .contacticon {
-  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3); /* Aumenté de 4px a 6px y de 6px a 12px */
-  border-radius: 12px; /* Aumenté de 4px a 6px para mayor redondeo */
-  transition: box-shadow 0.3s ease; /* Transición suave al hover */
-  width: 100% !important; /* Fuerza el tamaño */
-  height: auto !important; /* Mantiene la proporción */
+  display: inline-block;
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease;
+  line-height: 0;
 }
 
 .contacticon:hover {
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4); /* Aumenté de 6px a 10px y de 12px a 20px */
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4);
 }
 
-/* Estilos para el menú desplegable en móvil */
 .mobileMenu {
   min-height: 100vh;
   width: 100%;
@@ -226,20 +153,17 @@
   align-items: flex-start;
 }
 
-/* Asegurar que los íconos y botones tengan suficiente espacio */
 .mobileMenu .grid {
   width: 100%;
   max-width: 100%;
   padding: 0 1rem;
 }
 
-/* Estilos para el botón de cerrar */
 .mobileMenu .closeButton {
   font-size: 1.5rem;
   line-height: 1;
 }
 
-/* Mejorar la visibilidad de los elementos */
 .mobileMenu a, .mobileMenu button {
   width: 100%;
   display: flex;
@@ -247,3 +171,22 @@
   padding: 0.5rem 0;
 }
 
+.mobileMenuContainer {
+  position: fixed;
+  inset: 0;
+  top: 1px;
+  z-index: 50;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5px;
+  overflow-y: auto;
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.contactIconsContainer {
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.7));
+}

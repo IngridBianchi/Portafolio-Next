@@ -24,13 +24,13 @@
   --color-secondary: #0D79BC;
 }
 
-[data-theme="dark"] {
-  --color-bg-dark: #1f2a44;
-  --color-text-dark: #e0e7ff;
+html[data-theme='light'] {
+  --color-bg-dark: #ffffff;
+  --color-text-dark: #e0e7ff; /* Texto claro para que contraste con el fondo oscuro superior */
 }
 
-[data-theme="light"] {
-  --color-bg-dark: #ffffff;
+html[data-theme='dark'] {
+  --color-bg-dark: #1f2a44;
   --color-text-dark: #e0e7ff;
 }
 
@@ -41,6 +41,34 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+
+body {
+  background: linear-gradient(180deg, var(--gradient-initial-1), var(--gradient-initial-2), var(--gradient-initial-3));
+  background-size: 100% 300%;
+  animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Fondo para el tema claro (degradado inverso con acento) */
+html[data-theme='light'] body {
+  background: linear-gradient(180deg, var(--gradient-initial-3) 0%, var(--gradient-initial-2) 25%, var(--gradient-initial-1) 65%);
+}
+
+/* Fondo para el tema oscuro */
+html[data-theme='dark'] body {
+  background: linear-gradient(180deg, var(--gradient-initial-1), var(--gradient-initial-2), var(--gradient-initial-3));
 }
 
 #__next {
@@ -54,4 +82,11 @@ body[style*="overflow: hidden"] #__next,
 body[style*="overflow: hidden"] #__next > div {
   height: 100vh !important;
   min-height: 100vh !important;
+}
+
+.mobile-menu-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
 }

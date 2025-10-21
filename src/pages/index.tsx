@@ -20,7 +20,7 @@ interface Props {
 }
 
 const Home: React.FC<Props> = ({ initialLanguage, texts, startups, projects, repositories, stackImages }) => {
-  const { theme, themeStyles, toggleTheme } = useDarkMode();
+  const { theme, toggleTheme } = useDarkMode();
   const [language, setLanguage] = useState<string>(initialLanguage);
   const router = useRouter();
 
@@ -31,7 +31,7 @@ const Home: React.FC<Props> = ({ initialLanguage, texts, startups, projects, rep
   };
 
   return (
-    <div className={styles.portfolioContainer} style={{ backgroundColor: themeStyles.colors.background, color: themeStyles.colors.text }}>
+    <div className={styles.portfolioContainer}>
       <Header
         theme={theme}
         toggleTheme={toggleTheme}
@@ -40,10 +40,10 @@ const Home: React.FC<Props> = ({ initialLanguage, texts, startups, projects, rep
         texts={texts}
       />
       <div className={styles.contentWrapper}>
-        <SectionAboutMe aboutText={texts.who_i_am} welcome={texts.welcome_text} />
+        <SectionAboutMe texts={texts} />
+        <SectionLanguages repositories={repositories} stackImages={stackImages} lang={texts} />
         <SectionStartups startups={startups} lang={texts} />
         <SectionProjects projects={projects} lang={texts} />
-        <SectionLanguages repositories={repositories} stackImages={stackImages} lang={texts} />
       </div>
     </div>
   );

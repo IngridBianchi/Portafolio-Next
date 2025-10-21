@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import { GradientProvider } from '../context/GradientContext';
 import GradientUpdater from '../components/GradientUpdater/GradientUpdater';
 import '../styles/global.css';
+import 'tippy.js/dist/tippy.css'; // Import tippy's CSS here
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

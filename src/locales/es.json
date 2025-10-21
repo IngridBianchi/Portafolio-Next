@@ -1,15 +1,13 @@
 {
-  "idiom":"es",
+  "idiom": "es",
   "welcome_text": "¡Hola! Mi nombre es Ingrid Bianchi",
-  "who_i_am": [ "De estratega comercial a full-stack con alma de UX", "Antes vivía entre estrategias de ventas y equipos multidisciplinarios, buscando siempre la manera más eficiente de hacer las cosas. Pero pensé: ‘¿Y si llevo mi pasión por conectar al mundo tech?’ 🚀", 
-  "Ahora fusiono desarrollo web con diseño centrado en el usuario, entendiendo qué quieren y necesitan las personas para crear soluciones que realmente impacten.", 
-"Mi superpoder: una visión 360° que une empatía y estrategia. Estudio el mercado y la competencia para saber si un producto volará antes de escribir la primera línea de código. Con experiencia en e-commerce, CRM y metodologías ágiles, traduzco necesidades comerciales en tecnología sólida.", 
-"Me apasiona transformar ideas en sistemas interactivos que enganchan. Cada bug resuelto, cada experiencia fluida, es un paso hacia algo grande.", 
-"¿Listos para crear algo que marque la diferencia?"],
-  "my_projects": "Mis Proyectos",
-  "my_lang_stack": "Mi stack de lenguajes",
+  "who_i_am": [
+    "De estratega comercial a desarrolladora full stack con visión de producto",
+    "Antes vivía entre campañas, equipos multidisciplinarios y tableros de marketing, buscando siempre la forma más eficiente de conectar con las personas. Hasta que un día pensé: “¿Y si llevo esa obsesión por entender al usuario al mundo tech?”",
+    "Hoy diseño y desarrollo soluciones digitales que no solo funcionan: enamoran. Fusiono backend sólido con diseño UX/UI centrado en el usuario, y traduzco necesidades comerciales en tecnología escalable, segura y mantenible.",
+    "Mi diferencial: una visión 360° que une empatía, arquitectura y estrategia. Analizo el mercado, la competencia y el contexto antes de escribir la primera línea de código. Con experiencia en e-commerce, CRM, bots, APIs y automatización, cada proyecto que toco busca impacto real.",
+    "Me apasiona transformar ideas en sistemas interactivos que resuelven, enganchan y evolucionan. Cada bug resuelto, cada flujo optimizado, es un paso hacia algo grande."],
   "contact_me": {
-    "text": "Contactame",
     "whatsapp": "+543434648300",
     "email": "bianchi.ingrid204@gmail.com",
     "github": "https://github.com/IngridBianchi",
@@ -19,10 +17,16 @@
     "resume_en": "assets/cv-en.pdf",
     "resume_es": "assets/cv.pdf"
   },
-  "help_text": "¿Puedo ayudarte en algo?",
-  "page_text": "Página",
-  "gh_front_text": "Repo Front",
-  "gh_back_text": "Repo Back",
-  "description": "Descripcion: ",
-  "lang": "Lenguajes: "
+  "tooltips": {
+    "audio_play": "Reproducir música",
+    "audio_pause": "Pausar música",
+    "theme_light": "Cambiar a tema claro",
+    "theme_dark": "Cambiar a tema oscuro",
+    "language_en": "Switch to English",
+    "language_es": "Cambiar a Español"
+  },
+  "about_me_title": "Sobre Mí",
+  "projects_title": "Proyectos",
+  "startups_title": "Startups",
+  "language_stack_title": "Stack de Lenguajes"
 }

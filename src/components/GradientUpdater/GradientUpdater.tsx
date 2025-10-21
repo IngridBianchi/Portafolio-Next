@@ -33,7 +33,6 @@ const GradientUpdater: React.FC = () => {
         root.style.setProperty("--gradient-color-2", interpolateColor("#00193D", "#692646", progress));
         root.style.setProperty("--gradient-color-3", interpolateColor("#1199ED", "#000111", progress));
       }
-      console.log('Updating gradients for activeImage:', activeImage, 'isHovered:', isHovered, 'progress:', progress.toFixed(2));
     };
 
     const animate = (startTime: number) => {
@@ -58,7 +57,6 @@ const GradientUpdater: React.FC = () => {
       }
     };
 
-    // Convertimos lastProgressRef.current a boolean para la comparación
     const lastProgressAsBoolean = lastProgressRef.current >= 0.5;
     if (isHovered !== lastProgressAsBoolean) {
       const startTime = performance.now();
@@ -72,7 +70,7 @@ const GradientUpdater: React.FC = () => {
         cancelAnimationFrame(animationRef.current);
       }
     };
-  }, [activeImage, isHovered]);
+  }, [activeImage, isHovered, progress]);
 
   return null;
 };
