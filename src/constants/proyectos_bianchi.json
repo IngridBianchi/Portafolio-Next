@@ -1,60 +1,30 @@
 [
   {
-    "id": 1,
-    "name": "Netflix Bianchi",
-    "frontend": [
-      "/assets/ts.png",
-      "https://images.velog.io/images/vamos_eon/post/67b0f6f6-941d-42da-ad7a-626ff0a96533/jwt.png",
-      "/assets/mui.png",
-      "/assets/mercadopago.png",
-      "/assets/tailwind.png",
-      "/assets/crypto.png",
-      "/assets/youtube.png",
-      "/assets/vercel.png"],
-
-    "backend": [
-      "/assets/c.png",
-      "/assets/puntonetcore.png",
-      "/assets/asp.net.png",
-      "/assets/ef8.png",
-      "/assets/hangfire.png",
-      "/assets/mercadopago.png",
-      "/assets/sqlserver.png",
-      "/assets/azure.png"
-    ],
+    "id": 3,
+    "name": "Blog Videogames Bianchi",
+    "frontend": ["/assets/php.png","/assets/css.png", "/assets/html.png"],
+    "backend": ["/assets/php.png", "/assets/docker.png", "/assets/mysql.png"],
     "video_tutorial_es": "",
     "video_tutorial_en": "",
-    "poster_url": "./assets/netflix_bianchi.png",
-    "description_es": "La aplicación es una imitación de Netflix, diseñada para ofrecer una experiencia de usuario similar tanto para los creadores de contenido como para los consumidores finales. La plataforma incluye las siguientes características principales:\nCaracterísticas para Creadores de Contenido:\nVistas de Creación de Contenidos = Formularios de Carga, Gestión de Contenidos, Estadísticas y Análisis.\nCaracterísticas para Usuarios Finales:\nExploración de Contenido = Catálogo de Vídeos, Recomendaciones Personalizadas, Búsqueda y Filtros.\nReproducción de Vídeos = Reproductor de Vídeo Integrado, Listas de Reproducción y Favoritos.\nPerfil de Usuario = Gestión de Perfil, Suscripciones y Pagos.",
-    "description_en": "The application is a Netflix imitation, designed to provide a similar user experience for both content creators and end-users. The platform includes the following main features:\nFeatures for Content Creators:\nContent Creation Views = Upload Forms, Content Management, Statistics and Analytics.\nFeatures for End Users:\nContent Exploration = Video Catalog, Personalized Recommendations, Search and Filters.\nVideo Playback = Integrated Video Player, Playlists and Favorites.\nUser Profile = Profile Management, Subscriptions and Payments.",
-    "github_f": "https://github.com/IngridBianchi/Netflix-React-TS",
-    "github_b": "https://github.com/IngridBianchi/.NET_Asp.NET_C-Sharp_Netflix",
-    "domain": ""
+    "poster_url": "assets/blog-videogame.png",
+    "description_es": "Un blog dinámico sobre videojuegos desarrollado en PHP y MySQL, con funcionalidades completas de CRUD, autenticación de usuarios y sistema de búsqueda.",
+    "description_en": "A dynamic video game blog developed in PHP and MySQL, with full CRUD functionality, user authentication, and a search system.",
+    "github_f": "",
+    "github_b": "https://github.com/IngridBianchi/blog-videogame?tab=readme-ov-file",
+    "domain":""
   },
   {
-    "id": 2,
-    "name": "Video Games Bianchi",
-    "frontend": [
-      "/assets/react.png",
-      "/assets/redux.png",
-      "/assets/jscript.png",
-      "/assets/vercel.png"
-    ],
-    "backend": [
-      "/assets/node.js.png",
-      "/assets/express.png",
-      "/assets/sequelize.png",
-      "/assets/postgresql.png",
-      "/assets/azure.png",
-      "/assets/render.png"
-    ],
-    "video_tutorial_es": " ",
-    "video_tutorial_en": " ",
-    "poster_url": "./assets/videogames_bianchi.png",
-    "description_es": "Aplicación de una sola página donde puedes crear y explorar juegos de diferentes plataformas.\nFrontend: React-Redux. \nBackend: Express.js, Sequelize, PostgreSQL",
-    "description_en": "SPA where you can create and browse games from different platforms.\nFrontend: React-Redux. \nBackend: Express.js, Sequelize, PostgreSQL",
-    "github_f": "https://github.com/IngridBianchi/Videogames-Explorer",
-    "github_b": " ",
-    "domain": " "
+    "id": 4,
+    "name": "T-shirt Shop - PHP OOP Project",
+    "frontend": ["/assets/php.png","/assets/css.png", "/assets/html.png"],
+    "backend": ["/assets/php.png", "/assets/docker.png", "/assets/mysql.png"],
+    "video_tutorial_es": "",
+    "video_tutorial_en": "",
+    "poster_url": "assets/tienda-camisetas.png",
+    "description_es": "Este proyecto es una tienda online de camisetas desarrollada desde cero en PHP puro, aplicando el paradigma de Programación Orientada a Objetos (POO) y la arquitectura Modelo-Vista-Controlador (MVC). Es una demostración práctica de cómo estructurar una aplicación web robusta y mantenible sin depender de frameworks.",
+    "description_en": "This project is an online store developed in PHP using Object-Oriented Programming (OOP) paradigm. The application allows managing products, categories, users, orders, and a shopping cart, following the MVC (Model-View-Controller) design pattern.",
+    "github_f": "",
+    "github_b": "https://github.com/IngridBianchi/proyecto-ecommerce-php-poo",
+    "domain":"https://shopingridb.gt.tc/"
   }
 ]

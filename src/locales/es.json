@@ -28,5 +28,9 @@
   "about_me_title": "Sobre Mí",
   "projects_title": "Proyectos",
   "startups_title": "Startups",
-  "language_stack_title": "Stack de Lenguajes"
+  "language_stack_title": "Stack de Lenguajes",
+  "github_frontend_button": "Frontend en GitHub",
+  "github_backend_button": "Backend en GitHub",
+  "website_button": "Ir al sitio web",
+  "video_tutorial_button": "Ver video tutorial"
 }

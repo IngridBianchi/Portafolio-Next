@@ -39,7 +39,7 @@ const SectionProjects: React.FC<Props> = ({ projects, lang }) => {
     <section className={styles.section}>
       <style>{scrollbarStyles}</style>
       <div className={styles.sectionContainer}>
-        <h2 className={styles.sectionTitle}>{lang.my_projects}</h2>
+        <h2 className={styles.sectionTitle}>{lang.projects_title}</h2>
         <div className={styles.cardGrid}>
           {filteredProjects.map(project => (
             <CardItem

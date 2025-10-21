@@ -270,12 +270,12 @@ const Header: React.FC<Props> = ({
       {isLargeScreen && (
         <div className="flex items-center space-x-2 mb-4 md:mb-0">
           <Tooltip content={en}>
-            <button onClick={() => window.open(texts.contact_me.resume_en)} className="bg-gradient-to-r from-[var(--color-accent)] to-[var(--color-secondary)] p-3 rounded-full hover:from-[var(--color-accent-hover)] hover:to-[var(--color-secondary)] transition-all">
+            <button onClick={() => window.open(texts.contact_me.resume_en)} className={`${styles.cvIcon} bg-gradient-to-r from-[var(--color-accent)] to-[var(--color-secondary)] p-3 rounded-full hover:from-[var(--color-accent-hover)] hover:to-[var(--color-secondary)] transition-all`}>
               <Image src="/assets/CV-EN.png" alt="CV EN" width={90} height={90} />
             </button>
           </Tooltip>
           <Tooltip content={es}>
-            <button onClick={() => window.open(texts.contact_me.resume_es)} className="bg-gradient-to-r from-[var(--color-accent)] to-[var(--color-secondary)] p-3 rounded-full hover:from-[var(--color-accent-hover)] hover:to-[var(--color-secondary)] transition-all">
+            <button onClick={() => window.open(texts.contact_me.resume_es)} className={`${styles.cvIcon} bg-gradient-to-r from-[var(--color-accent)] to-[var(--color-secondary)] p-3 rounded-full hover:from-[var(--color-accent-hover)] hover:to-[var(--color-secondary)] transition-all`}>
               <Image src="/assets/CV-ES.png" alt="CV ES" width={90} height={90} />
             </button>
           </Tooltip>

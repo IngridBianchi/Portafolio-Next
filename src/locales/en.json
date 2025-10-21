@@ -2,18 +2,19 @@
   "idiom": "en",
   "welcome_text": "Hello! My name is Ingrid Bianchi",
   "who_i_am": [
-    "From Commercial Strategist to Full Stack Developer with Product Vision",
-    "I used to live among campaigns, multidisciplinary teams, and marketing dashboards—always searching for the most efficient way to connect with people. Then one day I thought: “What if I bring that obsession with understanding users into the tech world?",
-    "Today, I design and build digital solutions that don’t just work—they resonate. I blend solid backend development with user-centered UX/UI design, translating business needs into scalable, secure, and maintainable technology.",
-    "My edge: a 360° vision that fuses empathy, architecture, and strategy. I analyze the market, the competition, and the context before writing a single line of code. With experience in e-commerce, CRM, bots, APIs, and automation, every project I touch aims for real impact.",
-    "I’m passionate about turning ideas into interactive systems that solve problems, engage users, and evolve. Every bug fixed, every flow optimized, is a step toward something greater."],
+    "From commercial strategist to full stack developer with a product vision",
+    "I used to live between campaigns, multidisciplinary teams and marketing boards, always looking for the most efficient way to connect with people. Until one day I thought: \"What if I take that obsession with understanding the user to the tech world? \"",
+    "Today I design and develop digital solutions that not only work: they make people fall in love. I merge a solid backend with user-centered UX/UI design, and translate business needs into scalable, secure and maintainable technology.",
+    "My differential: a 360° vision that unites empathy, architecture and strategy. I analyze the market, the competition and the context before writing the first line of code. With experience in e-commerce, CRM, bots, APIs and automation, every project I touch seeks real impact.",
+    "I am passionate about transforming ideas into interactive systems that solve, engage and evolve. Every bug resolved, every optimized flow, is a step towards something great."
+  ],
   "contact_me": {
     "whatsapp": "+543434648300",
     "email": "bianchi.ingrid204@gmail.com",
     "github": "https://github.com/IngridBianchi",
     "linkedin": "https://www.linkedin.com/in/ingrid-lorena-bianchi/",
-    "resume_text_en": "Resume in English",
-    "resume_text_es": "Resume in Spanish",
+    "resume_text_en": "CV in English",
+    "resume_text_es": "CV in Spanish",
     "resume_en": "assets/cv-en.pdf",
     "resume_es": "assets/cv.pdf"
   },
@@ -26,7 +27,11 @@
     "language_es": "Cambiar a Español"
   },
   "about_me_title": "About Me",
-    "projects_title": "Projects",
-    "startups_title": "Startups",
-    "language_stack_title": "Language Stack"
+  "projects_title": "Projects",
+  "startups_title": "Startups",
+  "language_stack_title": "Language Stack",
+  "github_frontend_button": "Frontend on GitHub",
+  "github_backend_button": "Backend on GitHub",
+  "website_button": "Go to website",
+  "video_tutorial_button": "Watch video tutorial"
 }

@@ -28,7 +28,7 @@ const SectionStartups: React.FC<Props> = ({ startups, lang }) => {
     <section className={styles.section}>
       <style>{scrollbarStyles}</style>
       <div className={styles.sectionContainer}>
-        <h2 className={styles.sectionTitle}>{lang.my_startups}</h2>
+        <h2 className={styles.sectionTitle}>{lang.startups_title}</h2>
         <div className={styles.cardGrid}>
           {startups.map((startup) => (
             <CardItem key={startup.id} item={startup} lang={lang} />

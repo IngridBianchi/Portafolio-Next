@@ -43,11 +43,8 @@ const CardItem: React.FC<Props> = ({ item, stackImages, lang }) => {
 
   const varHeight = !!item?.image_url || !isLargeScreen ? '6rem' : '35vh';
   const varWidth = !!item?.image_url || !isLargeScreen ? '12rem' : '35vw';
-  const varVideoID = lang.idiom === 'es' && item?.video_tutorial_es 
-    ? item?.video_tutorial_es?.split('v=')[1]?.split('&')[0]
-    : lang.idiom === 'en' && item?.video_tutorial_en 
-    ? item?.video_tutorial_en?.split('v=')[1]?.split('&')[0] 
-    : null;
+  const videoUrl = lang.idiom === 'es' ? item?.video_tutorial_es : item?.video_tutorial_en;
+  const varVideoID = videoUrl ? videoUrl.split('v=')[1]?.split('&')[0] : null;
 
   return (
     <div className={`${styles.cardContainer} text-${theme.palette.text.primary}`}>
@@ -68,13 +65,7 @@ const CardItem: React.FC<Props> = ({ item, stackImages, lang }) => {
               onClick={() => handleImageClick(item?.github)}
               className="w-11/12 h-full object-cover rounded-md cursor-pointer mx-2"
             />
-          ) : !isHovered ? (
-            <img
-              src={item?.poster_url}
-              alt={item?.name}
-              className="max-w-full max-h-full object-contain rounded-md cursor-pointer"
-            />
-          ) : varVideoID !== null ? (
+          ) : isHovered && varVideoID ? (
             <YouTube
               videoId={varVideoID}
               opts={{
@@ -82,7 +73,13 @@ const CardItem: React.FC<Props> = ({ item, stackImages, lang }) => {
                 width: '100%',
               }}
             />
-          ) : null}
+          ) : (
+            <img
+              src={item?.poster_url}
+              alt={item?.name}
+              className="max-w-full max-h-full object-contain rounded-md cursor-pointer"
+            />
+          )}
         </div>
       </div>
 
@@ -97,7 +94,7 @@ const CardItem: React.FC<Props> = ({ item, stackImages, lang }) => {
                   className="bg-gradient-to-r from-[#ff4d9e] to-[#ff1f81] text-white py-3 px-6 rounded-md hover:from-[#ff1f81] hover:to-[#d81b60] transition-all min-w-[120px]"
                   onClick={() => window.open(item?.domain)}
                 >
-                  {lang.page_text}
+                  {lang.website_button}
                 </button>
               )}
               {item?.github_f && (
@@ -105,7 +102,7 @@ const CardItem: React.FC<Props> = ({ item, stackImages, lang }) => {
                   className="bg-gradient-to-r from-[#1e1e1e] to-[#2c2c2c] text-white py-3 px-6 rounded-md hover:from-[#2c2c2c] hover:to-[#1e1e1e] transition-all min-w-[120px]"
                   onClick={() => window.open(item?.github_f)}
                 >
-                  {lang.gh_front_text}
+                  {lang.github_frontend_button}
                 </button>
               )}
               {item?.github_b && (
@@ -113,8 +110,16 @@ const CardItem: React.FC<Props> = ({ item, stackImages, lang }) => {
                   className="bg-gradient-to-r from-[#1e1e1e] to-[#2c2c2c] text-white py-3 px-6 rounded-md hover:from-[#2c2c2c] hover:to-[#1e1e1e] transition-all min-w-[120px]"
                   onClick={() => window.open(item?.github_b)}
                 >
-                  {lang.gh_back_text}
+                  {lang.github_backend_button}
                 </button>
+              )}
+              {videoUrl && (
+                  <button
+                    className="bg-gradient-to-r from-[#ff0000] to-[#b30000] text-white py-3 px-6 rounded-md hover:from-[#b30000] hover:to-[#ff0000] transition-all min-w-[120px]"
+                    onClick={() => window.open(videoUrl)}
+                  >
+                    {lang.video_tutorial_button}
+                  </button>
               )}
             </div>
 
