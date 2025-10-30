@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Certified DevOps",
+    "issuer": "Udemy",
+    "date": "19-08-2025",
+    "url": "/assets/DevOps-certificado.png",
+    "logo_url": "/assets/DevOps-certificado.png"
+  },
+  {
+    "id": 2,
+    "name": "Certified Learn Object-Oriented Programming with PHP",
+    "issuer": "Coursera Projet Network",
+    "date": "02-11-2025",
+    "url": "/assets/LearnOOPwithPHP.png",
+    "logo_url": "/assets/LearnOOPwithPHP.png"
+  },
+  {
+    "id": 3,
+    "name": "Certified Building Web Appications in PHP",
+    "issuer": "University of Michigan - Coursera",
+    "date": "12-02-2025",
+    "url": "/assets/BuildingWebAppPHP.png",
+    "logo_url": "/assets/BuildingWebAppPHP.png"
+  },
+  {
+    "id": 4,
+    "name": "Certified Buil a free website with WordPress",
+    "issuer": "Coursera Projet Network",
+    "date": "25-07-2023",
+    "url": "/assets/WordPress-Coursera.png",
+    "logo_url": "/assets/WordPress-Coursera.png"
+  },
+  {
+    "id": 5,
+    "name": "Certified User Experience (UX) Design at Google",
+    "issuer": "Google - Coursera",
+    "date": "26-08-2023",
+    "url": "/assets/Ingrid-Bianchi-uxui.png",
+    "logo_url": "/assets/Ingrid-Bianchi-uxui.png"
+  },
+  {
+    "id": 6,
+    "name": "Certified Master en PHP, SQL, POO, MVC, Laravel, Symfony, WordPress y más...",
+    "issuer": "Udemy",
+    "date": "12-02-2025",
+    "url": "/assets/master-php-poo-mvc-laravel-symfony.png",
+    "logo_url": "/assets/master-php-poo-mvc-laravel-symfony.png"
+  }
+]

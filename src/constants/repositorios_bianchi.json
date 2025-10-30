@@ -2,37 +2,107 @@
   {
     "id": 1,
     "language_code": "PHP",
-    "image_url": "https://miro.medium.com/v2/resize:fit:1400/1*RPeP8lkHMMBdh_Z-1GZN-w.png",
+    "name": "Noa",
+    "backend": [
+      "Php 8.2",
+      "Laravel 11",
+      "Laravel Sail",
+      "Postgresql 15",
+      "Laravel Breeze"
+    ],
+    "frontend": [
+      "Vite",
+      "TailwindCSS",
+      "Alpine.js",
+      "Blade"
+    ],
     "github": "https://github.com/IngridBianchi/Noa"
   },
-  
   {
     "id": 2,
     "language_code": "TypeScript",
-    "image_url": "https://miro.medium.com/v2/resize:fit:1400/1*O5hmVOc1j-xOCs7VQKEdoA.png",
+    "name": "Netflix Clone",
+    "frontend": [
+      "React",
+      "Redux (con Redux Toolkit)",
+      "React Router",
+      "TypeScript",
+      "Axios",
+      "Material-UI (MUI)",
+      "Tailwind CSS",
+      "Chart.js & Victory",
+      "Mercado Pago SDK"
+    ],
     "github": "https://github.com/IngridBianchi/Netflix-React-TS.git"
   },
   {
     "id": 3,
     "language_code": "TypeScript",
-    "image_url": "https://miro.medium.com/v2/resize:fit:1400/1*m6Be5T5OUlYjiOnZOFHi9Q.png",
+    "name": "Hexagonal Architecture",
+    "backend": [
+      "TypeScript",
+      "Node.js",
+      "Express.js (para la API REST)",
+      "Bases de Datos y ORM/ODM:El proyecto está diseñado para ser flexible y parece soportar múltiples bases de datos.(Mongoose, Sequelize, TypeORM)",
+      "Inyección de Dependencias: TypeDI",
+      "Validación: Zod"
+    ],
+    "frontend": [
+      "React"
+    ],
     "github": "https://github.com/IngridBianchi/Hexagonal-architecture"
   },
   {
     "id": 4,
     "language_code": "TypeScript",
-    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt8FmMPse0kPMCR5jFbPCCkzHOhPt4vhYzlQ&s",
+    "name": "Portfolio Next.js",
+    "backend": [
+      "Node.js: Next.js se ejecuta en un entorno de Node.js en el servidor.",
+      "API Routes de Next.js: Es un sistema de backend 'serverless' integrado en el framework."
+    ],
+    "frontend": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Material-UI (MUI)",
+      "Tippy.js / React Tooltip",
+      "Next-i18next (para internacionalización)"
+    ],
     "github": "https://github.com/IngridBianchi/Portafolio-Next"
   },
   {
     "id": 5,
     "language_code": "Python",
-    "image_url": "https://miro.medium.com/v2/resize:fit:614/1*0sQg0SQlFZvAviQWywTiow.png",
+    "name": "Python Selenium Project",
+    "backend": [
+      "Python",
+      "Selenium",
+      "FastAPI",
+      "SQLAlchemy",
+      "Pydantic",
+      "Pytest",
+      "Pytest-parallel"
+    ],
     "github": "https://github.com/IngridBianchi/Proyecto-Integral-Python-Selenium"
   },
   {
     "id": 6,
-    "language_code": "Python",
-    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZWAQKYVa0Q7Vl_WMEY-z-aIH4dqbtvgEMg&s",
-    "github": "https://github.com/IngridBianchi/Lessons-Python-Selenium"
-  }]
+    "language_code": "C#",
+    "name": "AminesApi",
+    "backend": [
+      "'C#'",
+      ".NET",
+      "Swagger (OpenAPI)",
+      "Base de Datos: Oracle Autonomous Database (ADB)",
+      "ORM: Entity Framework Core",
+      "RabbitMQ",
+      "OCI Object Storage (Oracle Cloud Infrastructure Object Storage)",      
+      "Docker",
+      "Docker Compose",
+      "Python"
+    ],
+    "github": "https://github.com/IngridBianchi/AminesApi"
+  }
+]

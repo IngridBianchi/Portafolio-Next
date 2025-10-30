@@ -7,6 +7,7 @@ import SectionAboutMe from '../components/SectionAboutMe/SectionAboutMe';
 import SectionStartups from '../components/SectionStartups/SectionStartups';
 import SectionProjects from '../components/SectionProjects/SectionProjects';
 import SectionLanguages from '../components/SectionLanguages/SectionLanguages';
+import SectionCertifications from '../components/SectionCertifications/SectionCertifications'; // Importa el nuevo componente
 import { useState } from 'react';
 import styles from '../components/Module-CSS/index.module.css';
 
@@ -17,9 +18,10 @@ interface Props {
   projects: any[];
   repositories: any[];
   stackImages: any;
+  certifications: any[]; // Añade la nueva prop
 }
 
-const Home: React.FC<Props> = ({ initialLanguage, texts, startups, projects, repositories, stackImages }) => {
+const Home: React.FC<Props> = ({ initialLanguage, texts, startups, projects, repositories, stackImages, certifications }) => {
   const { theme, toggleTheme } = useDarkMode();
   const [language, setLanguage] = useState<string>(initialLanguage);
   const router = useRouter();
@@ -44,6 +46,7 @@ const Home: React.FC<Props> = ({ initialLanguage, texts, startups, projects, rep
         <SectionLanguages repositories={repositories} stackImages={stackImages} lang={texts} />
         <SectionStartups startups={startups} lang={texts} />
         <SectionProjects projects={projects} lang={texts} />
+        <SectionCertifications certifications={certifications} lang={texts} /> {/* Añade la nueva sección */}
       </div>
     </div>
   );
@@ -54,12 +57,14 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const startups = require(`../constants/startups_bianchi.json`);
   const projects = require(`../constants/proyectos_bianchi.json`);
   const repositories = require(`../constants/repositorios_bianchi.json`);
+  const certifications = require(`../constants/certifications_bianchi.json`); 
+  
   const stackImages = {
     PHP: "./assets/php.png",
     TypeScript: "./assets/ts.webp",
     Python: "./assets/py.jpg",
     JavaScript: "./assets/js.png",
-    'C#': "./assets/c_sharp.webp",
+    'C#': "./assets/c_sharp.png",
     Java: "./assets/java.png"
   };
 
@@ -71,6 +76,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
       projects,
       repositories,
       stackImages,
+      certifications, // Pasa los datos a la página
     },
   };
 };

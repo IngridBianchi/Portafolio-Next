@@ -28,8 +28,10 @@
   "projects_title": "Projects",
   "startups_title": "Startups",
   "language_stack_title": "Language Stack",
+  "certifications_title": "Certifications",
   "github_frontend_button": "Frontend on GitHub",
   "github_backend_button": "Backend on GitHub",
   "website_button": "Go to website",
-  "video_tutorial_button": "Watch video tutorial"
+  "video_tutorial_button": "Watch video tutorial",
+  "view_certificate_button": "View Certificate"
 }

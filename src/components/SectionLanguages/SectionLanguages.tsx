@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import CardItem from '../CardItem/CardItem';
+import LanguageCardItem from '../LanguageCardItem/LanguageCardItem'; // Changed import
 import styles from '../Module-CSS/index.module.css';
 import useScrollButtons from './useScrollButtons';
 
@@ -77,7 +77,7 @@ const SectionLanguages: React.FC<Props> = ({ repositories, stackImages, lang }) 
                     className="flex-shrink-0"
                     style={{ margin: '4px 8px', width: 'calc(50% - 16px)' }}
                   >
-                    <CardItem item={repo} stackImages={stackImages} lang={lang} />
+                    <LanguageCardItem item={repo} stackImages={stackImages} lang={lang} />
                   </div>
                 ))}
               </div>
@@ -93,7 +93,7 @@ const SectionLanguages: React.FC<Props> = ({ repositories, stackImages, lang }) 
             </>
           )}
           {!isMobile && repositories.map((repo) => (
-            <CardItem key={repo.id} item={repo} stackImages={stackImages} lang={lang} />
+            <LanguageCardItem key={repo.id} item={repo} stackImages={stackImages} lang={lang} /> // Changed component
           ))}
         </div>
       </div>
